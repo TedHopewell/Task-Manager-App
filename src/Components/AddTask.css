@@ -1,0 +1,91 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.topPart{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 80px;
+    border-bottom: 2px solid black;
+    
+}
+
+.topPart button{
+    width: 100px;
+    margin:0px 20px 5px 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: #33b18d;
+}
+
+.bottomPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.bottomPart input{
+    margin-right: 10px;
+    height: 30px;
+    width: 500px;
+    padding-left: 20px;
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+    
+}
+
+.bottomPart select{
+    margin-right: 10px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.bottomPart button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: none;
+    color: #eee;
+    font-size: 1.6em;
+    background-color: #33b18d;
+    cursor: pointer;
+}
+
+
+/* Task list*/
+
+.taskList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskList .list{
+    width: 700px;
+    border-bottom: 1px solid black;
+}
+
+.taskList button{
+    margin-left: 540px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
