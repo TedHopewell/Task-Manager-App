@@ -19,6 +19,14 @@
     border-radius: 5px;
     border: none;
     background-color: #33b18d;
+    cursor: pointer;
+    
+}
+
+.topPart button:hover{
+    background-color: #776e7625;
+    
+    
 }
 
 .bottomPart{
@@ -58,6 +66,11 @@
     background-color: #33b18d;
     cursor: pointer;
 }
+.bottomPart button:hover{
+    background-color: #776e7625;
+    
+    
+}
 
 
 /* Task list*/
@@ -75,12 +88,23 @@
 }
 
 .taskList button{
-    margin-left: 540px;
+    margin-left: 340px;
     margin-top: 20px;
-    margin-bottom: 10px;
     width: 100px;
     height: 30px;
+    cursor: pointer;
 }
+
+.taskList button:hover{
+    background-color:#33b18d;
+    
+    
+}
+
+
+
+
+
 
 
 

@@ -86,7 +86,7 @@
 }   
 
 
-.link{
+Link{
     color: var(--btnGreen);
 }
 
@@ -102,6 +102,8 @@
     border: 1px solid grey;
     cursor: pointer;
 }
+
+
 
 
 

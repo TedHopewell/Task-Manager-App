@@ -7,11 +7,12 @@ function TaskList() {
 
         <h1>Task List</h1>
         <div className="list">
-            <button>COMPLETE</button>
+            <span>Added list displayed here</span><button>COMPLETE</button>
+            
         </div>
         
     </div>
   )
 }
 
-export default TaskList
+export default TaskList;
