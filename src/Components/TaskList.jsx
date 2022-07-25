@@ -7,7 +7,7 @@ function TaskList() {
 
         <h1>Task List</h1>
         <div className="list">
-            <span>Added list displayed here</span><button>COMPLETE</button>
+           
             
         </div>
         

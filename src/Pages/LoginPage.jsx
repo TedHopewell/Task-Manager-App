@@ -17,6 +17,7 @@ const LoginPage = () => {
 
 const SignInPage = (()=>{
   signInWithEmailAndPassword(auth, email, password).then(()=>{
+     
       history("/HomePage");
   }).catch((error)=>{
     console.log(error);

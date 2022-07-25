@@ -17,8 +17,19 @@ import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
 function App() {
 
 
+  const [tasks, setTasks] = useState([]);
+
+  const addTasks = ((task, priorityType)=>{
+    setTasks((tasks)=>[...tasks, {
+      task:task,
+      priorityType:priorityType
+    }])
+
+    console.log(tasks);
+  })
   return (
     <div className="App">
+   
       <Router>
       <Routes>
         <Route exact path="/" element = {<LoginPage/>}></Route>
