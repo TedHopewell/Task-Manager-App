@@ -45,6 +45,7 @@ function AddTask() {
         <div className="bottomPart">
             <input type="text" placeholder="Add New Task" onChange={(e)=>setTask(e.target.value)}/>
             <select name="priority" id="priority" onChange={(e)=>setPriorityType(e.target.value)}>
+                <option >Select Priority</option>
                 <option value="High">High</option>
                 <option value="Medium">Medium</option>
                 <option value="Low">Low</option>
