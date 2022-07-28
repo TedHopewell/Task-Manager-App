@@ -31,6 +31,7 @@
 
 .bottomPart{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
@@ -75,32 +76,34 @@
 
 /* Task list*/
 
-.taskList{
+
+.task-list{
+    width: 600px;
+    margin-right: 60px;
+}
+
+.item{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px .5px grey;
+    
+}
+.items{
+    padding: 5px 0;
 }
 
-.taskList .list{
-    width: 700px;
-    border-bottom: 1px solid black;
-}
-
-.taskList button{
-    margin-left: 340px;
-    margin-top: 20px;
+.item button{
+    border: 1px solid rgb(82, 167, 159); 
+    border-radius: 5px;
     width: 100px;
-    height: 30px;
-    cursor: pointer;
+    height: 40px;
+    background-color: #33b18d;
+    color: black;
 }
-
-.taskList button:hover{
-    background-color:#33b18d;
-    
-    
-}
-
 
 
 
