@@ -97,13 +97,15 @@
 }
 
 .item button{
-    border: 1px solid rgb(82, 167, 159); 
+    border: none; 
     border-radius: 5px;
     width: 100px;
     height: 40px;
     background-color: #33b18d;
     color: black;
 }
+
+
 
 
 

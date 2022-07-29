@@ -98,9 +98,28 @@ Link{
 
 .LoginPage .signBtn{
     margin: 20px;
+    padding-right: 20px;
     border-radius: 5px;
     border: 1px solid grey;
     cursor: pointer;
+    background-color: #efefefdd;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.logo img{
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.logo span{
+    padding-top: 5px;
 }
 
 

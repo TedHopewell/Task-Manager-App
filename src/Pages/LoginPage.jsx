@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import './LoginPage.css';
-
+import google from "../image/i.png"
 import {Link} from 'react-router-dom'
 import { signInWithEmailAndPassword} from 'firebase/auth'
 import { auth } from "../Config-file/firebase";
@@ -54,7 +54,8 @@ const SignInPage = (()=>{
 
             <h1 className='or'>OR</h1>
 
-            <button className='signBtn'>Sign in with google</button>
+            <button className='signBtn'><div className='logo'><img src={google} alt="" /><span><div>Sign in with google</div></span></div></button>
+            
 
           
 

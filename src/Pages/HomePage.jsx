@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
   import {db} from '../Config-file/firebase';
   
   import {addDoc, collection,getDocs} from 'firebase/firestore';
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   
  
 
@@ -55,6 +56,7 @@ function HomePage() {
   
               </select>
               <button onClick={addItems}>+</button>
+              
             </div>
 
             <div className="task-list">
