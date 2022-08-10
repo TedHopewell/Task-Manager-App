@@ -7,6 +7,8 @@ import React, { useState, useEffect } from "react";
   
   import {addDoc, collection,getDocs} from 'firebase/firestore';
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+  import google from '../image/accept.png'
   
  
 
@@ -68,18 +70,18 @@ function HomePage() {
                                         
                                         <div className="item" style={{borderBottom: "3px solid green"}}>
                                         <span>{item.task}</span>
-                                        <button>Complete</button>
+                                        <button className="complete"><div className="tick"><img src={google} alt="" /></div></button>
                                         </div>
                                 
                                     ):item.priority == "Medium" ? (
                                         <div className="item" style={{borderBottom: "3px solid orange"}}>
                                         <span>{item.task}</span>
-                                        <button >Complete</button>
+                                        <button className="complete"><div className="tick"><img src={google} alt="" /></div></button>
                                         </div>
                                     ):item.priority == "High" ? (
                                         <div className="item" style={{borderBottom: "3px solid red"}}>
                                         <span>{item.task}</span>
-                                        <button>Complete</button>
+                                        <button className="complete"><div className="tick"><img src={google} alt="" /></div></button>
         
                                         </div>
                                     ):(
