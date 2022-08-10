@@ -68,18 +68,18 @@ function HomePage() {
                                         
                                         <div className="item" style={{borderBottom: "3px solid green"}}>
                                         <span>{item.task}</span>
-                                        <button>complete</button>
+                                        <button>Complete</button>
                                         </div>
                                 
                                     ):item.priority == "Medium" ? (
                                         <div className="item" style={{borderBottom: "3px solid orange"}}>
                                         <span>{item.task}</span>
-                                        <button >complete</button>
+                                        <button >Complete</button>
                                         </div>
                                     ):item.priority == "High" ? (
                                         <div className="item" style={{borderBottom: "3px solid red"}}>
                                         <span>{item.task}</span>
-                                        <button>complete</button>
+                                        <button>Complete</button>
         
                                         </div>
                                     ):(

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import './LoginPage.css';
-import google from "../image/i.png"
+import google from '../image/i.png'
 import {Link} from 'react-router-dom'
 import { signInWithEmailAndPassword} from 'firebase/auth'
 import { auth } from "../Config-file/firebase";
@@ -13,7 +13,7 @@ const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  let history =useNavigate();
+  let history = useNavigate();
 
 const SignInPage = (()=>{
   signInWithEmailAndPassword(auth, email, password).then(()=>{
