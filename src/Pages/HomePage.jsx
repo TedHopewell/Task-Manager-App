@@ -10,6 +10,7 @@ import React, { useState, useEffect } from "react";
 
   import google from '../image/accept.png'
   
+  
  
 
 function HomePage() {
@@ -49,16 +50,17 @@ function HomePage() {
   
           <div className="bottomPart">
             <div className="input-fields">
-            <input type="text" placeholder="Add New Task" onChange={(e)=>setTask(e.target.value)}/>
-              <select name="priority" id="priority" onChange={(e)=>setPriority(e.target.value)}>
-                  <option value="Priority">PRIORITY</option>
-                  <option value="High">High</option>
-                  <option value="Medium">Medium</option>
-                  <option value="Low">Low</option>
-  
-              </select>
-              <button onClick={addItems}>+</button>
-              
+              <input type="text" placeholder="Add New Task" onChange={(e)=>setTask(e.target.value)}/>
+                <select name="priority" id="priority" onChange={(e)=>setPriority(e.target.value)}>
+                    <option value="Priority">PRIORITY</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+    
+                </select>
+                
+                <button className="topBtn" onClick={addItems}>+</button>
+                
             </div>
 
             <div className="task-list">
