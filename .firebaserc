@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "task-manager-app-659ca"
+    "default": "task-manager-app-659ca",
+    "taskmanager": "task-manager-app-659ca"
   },
   "targets": {},
   "etags": {}
