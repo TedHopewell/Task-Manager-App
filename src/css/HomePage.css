@@ -1,3 +1,5 @@
+
+
 *{
     box-sizing:border-box;
     margin: 0;
@@ -74,6 +76,11 @@
     background-color: #776e7625;
 }
 
+.input-fields {
+    display: flex;
+    align-items: center;
+}
+
 
 
 /* Task list*/
@@ -109,9 +116,7 @@
     
 }
 
-.item button:hover{
-    background-color: #33b18d;
-}
+
 
 .tick img{
     width: 40px;
