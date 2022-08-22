@@ -7,7 +7,6 @@
     font-family: sans-serif;
 }
 
-
 .topPart{
     display: flex;
     justify-content: space-between;
@@ -23,13 +22,17 @@
     border: none;
     background-color: #33b18d;
     cursor: pointer;
+    color: white;
+    font-size: 1.2em;
     
+}
+.topPart img {
+    height: 20px;
 }
 
 .topPart button:hover{
-    background-color: #776e7625;
-    
-    
+    background-color: rgba(245, 27, 27, 0.815);
+    color: black;
 }
 
 .bottomPart{
@@ -74,6 +77,7 @@
 
 .bottomPart button:hover{
     background-color: #776e7625;
+    color: black;
 }
 
 .input-fields {
@@ -115,7 +119,6 @@
     cursor: pointer;
     
 }
-
 
 
 .tick img{

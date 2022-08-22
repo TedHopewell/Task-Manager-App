@@ -1,7 +1,7 @@
 
 :root
 {
-    --btnGreen: #33b18d;
+    --btnGreen: #339eb1;
     --beige: beige;
     
 }
@@ -70,7 +70,10 @@
     width: 300px;
     height: 50px;
 }
-
+.LoginPage button:hover{
+   background-color: #eee;
+   
+}
 .LoginPage .lgnBtn{
     margin-top: 50px;
     border-radius: 5px;

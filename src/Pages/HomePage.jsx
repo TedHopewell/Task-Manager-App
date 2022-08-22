@@ -9,6 +9,8 @@ import React, { useState, useEffect } from "react";
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
   import google from '../image/accept.png'
+  import logout from '../image/logout.png'
+ 
   
   
  
@@ -45,7 +47,7 @@ function HomePage() {
       <div className="AddTask">
           <div className="topPart">
               <h1>Welcome Hopewell</h1>
-              <button>LogOut</button>
+              <button><div className="tick"><img src={logout} alt="" /></div></button>
           </div>
   
           <div className="bottomPart">
