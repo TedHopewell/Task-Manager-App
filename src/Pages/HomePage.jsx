@@ -7,10 +7,9 @@ import React, { useState, useEffect } from "react";
   
   import {addDoc, collection,getDocs} from 'firebase/firestore';
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faSignOut } from '@fortawesome/free-solid-svg-icons'
+  import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
-  import google from '../image/accept.png'
-  import logout from '../image/logout.png'
- 
   
   
  
@@ -47,7 +46,9 @@ function HomePage() {
       <div className="AddTask">
           <div className="topPart">
               <h1>Welcome Hopewell</h1>
-              <button><div className="tick"><img src={logout} alt="" /></div></button>
+              <button><div className="tick"><FontAwesomeIcon icon={faSignOut} className="lgOut" /></div></button>
+              
+              
           </div>
   
           <div className="bottomPart">
@@ -74,18 +75,18 @@ function HomePage() {
                                         
                                         <div className="item" style={{borderBottom: "3px solid green"}}>
                                         <span>{item.task}</span>
-                                        <button className="complete"><div className="tick"><img src={google} alt="" /></div></button>
+                                        <button className="complete"><div className="tick"><FontAwesomeIcon icon={faMinus} className="tick1"/></div></button>
                                         </div>
                                 
                                     ):item.priority == "Medium" ? (
                                         <div className="item" style={{borderBottom: "3px solid orange"}}>
                                         <span>{item.task}</span>
-                                        <button className="complete"><div className="tick"><img src={google} alt="" /></div></button>
+                                        <button className="complete"><div className="tick"><FontAwesomeIcon icon={faMinus} className="tick2"/></div></button>
                                         </div>
                                     ):item.priority == "High" ? (
                                         <div className="item" style={{borderBottom: "3px solid red"}}>
                                         <span>{item.task}</span>
-                                        <button className="complete"><div className="tick"><img src={google} alt="" /></div></button>
+                                        <button className="complete"><div className="tick"><FontAwesomeIcon icon={faMinus} className="tick3"/></div></button>
         
                                         </div>
                                     ):(

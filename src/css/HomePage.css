@@ -1,5 +1,11 @@
 
-
+:root{
+    --btnGreen:#33b18d;
+    --border: black;
+    --hover: #776e7625;
+    --btnHover:#eee;
+    --fontColor: white;
+}
 *{
     box-sizing:border-box;
     margin: 0;
@@ -11,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 80px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--border);
     
 }
 
@@ -20,19 +26,16 @@
     margin:0px 20px 5px 0px;
     border-radius: 5px;
     border: none;
-    background-color: #33b18d;
+    background-color: var(--btnGreen);
     cursor: pointer;
-    color: white;
+    color: var(--fontColor);
     font-size: 1.2em;
     
 }
-.topPart img {
-    height: 20px;
-}
 
 .topPart button:hover{
-    background-color: rgba(245, 27, 27, 0.815);
-    color: black;
+    
+    color: red;
 }
 
 .bottomPart{
@@ -49,7 +52,7 @@
     width: 500px;
     padding-left: 20px;
     border: none;
-    background-color: #eee;
+    background-color: var(--btnHover);
     border-radius: 5px;
     
 }
@@ -59,8 +62,9 @@
     height: 30px;
     width: 100px;
     border: none;
-    background-color: #33b18d;
+    background-color: var(--btnGreen);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .bottomPart button{
@@ -68,16 +72,18 @@
     width: 40px;
     border-radius: 50px;
     border: none;
-    color: #eee;
-    font-size: 1.6em;
-    background-color: #33b18d;
+    color: var(--btnHover);
+    font-size: 2.2em;
+    background-color: var(--btnGreen);
     cursor: pointer;
+
     
 }
 
 .bottomPart button:hover{
-    background-color: #776e7625;
-    color: black;
+    background-color: var(--hover);
+    color: var(--border);
+    font-size: 1.6em;
 }
 
 .input-fields {
@@ -102,7 +108,7 @@
     padding: 10px;
     border-radius: 5px;
     border: none;
-    box-shadow: 2px 2px 5px .5px grey;
+    box-shadow: 2px 2px 5px .5px var(--btnGreen);
     
 }
 .items{
@@ -112,18 +118,36 @@
 .item button{
     border: none; 
     border-radius: 50px;
-    width: 80px;
+    width: 40px;
     height: 40px;
-    background-color:white;
+    background-color:var(--btnGreen);
     font-size: 20px;
     cursor: pointer;
+    box-shadow: 5px 3px 8px var(--btnGreen);
     
 }
+.tick1{
+    font-size: 30px;
+}
+.tick2{
+    font-size: 30px;
+}
+.tick3{
+    font-size: 30px;
+}
+.task-list .tick1:hover{
+    color: green;
+    font-size: 28px;
+}
 
+.task-list .tick2:hover{
+    color: orange;
+    font-size: 28px;
+}
 
-.tick img{
-    width: 40px;
-    
+.task-list .tick3:hover{
+    color: red;
+    font-size: 28px;
 }
 
 

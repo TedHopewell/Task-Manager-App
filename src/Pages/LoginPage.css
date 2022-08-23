@@ -1,7 +1,7 @@
 
 :root
 {
-    --btnGreen: #339eb1;
+    --btnGreen:  #33b18d;
     --beige: beige;
     
 }
@@ -105,7 +105,7 @@ Link{
     border-radius: 5px;
     border: 1px solid grey;
     cursor: pointer;
-    background-color: #efefefdd;
+    
 }
 
 .logo{
